@@ -18,3 +18,14 @@ Learn vite build knowledge.
 
 
 ### 样式方案
+
+### 代码规范
+1. JS/TS 规范工具: ESLint
+2. CRLF (Windows) 和 LF (Unix) 是两种不同的换行符
+
+### 预购建
+1. 为什么需要预购建
+    依赖预构建主要做了两件事情：
+        a. 一是将其他格式(如 UMD 和 CommonJS)的产物转换为 ESM 格式，使其在浏览器通过 <script type="module"><script>的方式正常加载。
+        b. 二是打包第三方库的代码，将各个第三方库分散的文件合并到一起，减少 HTTP 请求数量，避免页面加载性能劣化
+        
